@@ -1,14 +1,21 @@
 public class Main {
     public static void main(String[] args ){
+        int repeat;
         double height, weight, bmi;
 
-        height = 160;
+        repeat = 0;
 
-        weight = 50;
+        while( repeat <= 1 ){
 
-        bmi = weight / height / height;
+            height = 160;
 
-         System.out.println("BMI is " + bmi);
+            weight = 50;
+
+            bmi = weight / height / height;
+
+            System.out.println("BMI is " + bmi);
+            repeat++;
+        }
 
     }
 }
