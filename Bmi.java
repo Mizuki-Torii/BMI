@@ -1,21 +1,28 @@
-public class Main {
-    public static void main(String[] args ){
-        int repeat;
-        double height, weight, bmi;
+import java.util.Scanner;
 
-        repeat = 0;
+public class Bmi{
+        public static void main(String[] args){
+                Scanner s = new Scanner(System.in);
+                double sintyo, taiju, bmi;
+                int a;
 
-        while( repeat <= 1 ){
-
-            height = 160;
-
-            weight = 50;
-
-            bmi = weight / height / height;
-
-            System.out.println("BMI is " + bmi);
-            repeat++;
-        }
-
-    }
+                for(a = 0;a <= 1;a++){
+                    System.out.println("cm");
+                    sintyo = s.nextDouble();
+                    System.out.println("kg");
+                    taiju = s.nextDouble();
+                    sintyo = sintyo/100;
+                    bmi = taiju/(sintyo*sintyo);
+                System.out.println("BMI="+(String.format("%.1f", bmi))+"");
+                }
+       }
 }
+
+
+
+
+
+
+
+
+
